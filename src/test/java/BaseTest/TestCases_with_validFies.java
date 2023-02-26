@@ -8,43 +8,53 @@ public class TestCases_with_validFies extends Baseclass
 	
 	
 @Test
-public void verify_valid_Dms_file() 
+public void verify_valid_Dms_file() throws InterruptedException 
   {
     homepage.click_on_uploadfile();
     homepage.get_valid_DMS_file();
-    homepage.click_on_submit();
+    Thread.sleep(3000);
+    Baseclass.validate_submit_downloadbutton();
+    
 	
   }
 @Test
-public void verify_valid_Dmsspace_file() 
+public void verify_valid_Dmsspace_file() throws InterruptedException 
   {
     homepage.click_on_uploadfile();
     homepage.get_Valid_DMS_space_file();
-    homepage.click_on_submit();
+    Thread.sleep(3000);
+    Baseclass.validate_submit_downloadbutton();
+    //homepage.click_on_submit();
 	
   }
 @Test
-public void verify_valid_DDMspace_file() 
+public void verify_valid_DDMspace_file() throws InterruptedException 
   {
     homepage.click_on_uploadfile();
     homepage.get_Valid_DDM_file();
-    homepage.click_on_submit();
+    Thread.sleep(3000);
+    Baseclass.validate_submit_downloadbutton();
+    //homepage.click_on_submit();
 	
   }
 @Test
-public void verify_valid_DD_file() 
+public void verify_valid_DD_file() throws InterruptedException 
   {
     homepage.click_on_uploadfile();
     homepage.get_Valid_DD_with_lable();
-    homepage.click_on_submit();
+    Thread.sleep(3000);
+    Baseclass.validate_submit_downloadbutton();
+    //homepage.click_on_submit();
 	
   }
 @Test
-public void verify_valid_DMSsapce_with_twolable_file() 
+public void verify_valid_DMSsapce_with_twolable_file() throws InterruptedException 
   {
     homepage.click_on_uploadfile();
     homepage.get_Valid_DMS_space_withTwo_lable();
-    homepage.click_on_submit();
+    Thread.sleep(3000);
+    Baseclass.validate_submit_downloadbutton();
+    //homepage.click_on_submit();
 	
   }
 	

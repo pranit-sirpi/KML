@@ -1,5 +1,6 @@
 package com.pom;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -7,13 +8,20 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 
+import com.aventstack.extentreports.util.Assert;
+
+
+
 public class HomePage {
+	
 	
 	@FindBy(xpath="//input[@value='manual']") private WebElement paste_data_manually; 
 	@FindBy(xpath="//input[@value='upload']")   private WebElement upload;
 	@FindBy(xpath="(//button[@type='button'])[1]") private WebElement Reset;
 	@FindBy(xpath="//input[@type='file']") private WebElement BrowseFile;
-	@FindBy(xpath="//span[text()='Submit and Download']") private WebElement submit_and_download;
+	@FindBy(xpath="(//button[@type='button'])[3]") public WebElement submit_and_download;
+	@FindBy(xpath="//button[@title='Zoom in']") private WebElement Zoomin;
+	@FindBy(xpath="//button[@title='Zoom out']") private WebElement Zoomout;
 	@FindBy(xpath="//input[@name='KML']")private  WebElement KML;
 	@FindBy(xpath="//input[@name='CSV']")private WebElement CSV;
 	@FindBy(xpath="//textarea[@id='textarea__input']")private  WebElement enter_data;
@@ -21,8 +29,12 @@ public class HomePage {
 	@FindBy(xpath="//div[@role='alert']") private WebElement latalert;
 	@FindBy(xpath="//a[text()='Lat/Long Sample']") private WebElement sample_latLong;
 	@FindBy(xpath="//a[text()='UTM Sample']") private WebElement sample_UTM;
+	@FindBy(xpath="//button[text()='Satellite']") private WebElement satellite;
+	@FindBy(xpath="//button[text()='Map']") private WebElement Map; 
+	@FindBy(xpath="//h3[text()='OUTPUTS']") private WebElement output;
+	@FindBy(xpath="//h3[text()='INPUTS']") private WebElement input;
 	
-	
+	 
 	public HomePage(WebDriver driver) 
 	{
 		
@@ -40,6 +52,46 @@ public class HomePage {
 	return b;
 	
 	}
+	public boolean paste_manual() 
+	{ 
+		
+	boolean c =paste_data_manually.isEnabled();
+	System.out.println(c);
+	return c;
+	
+	}
+	
+	public void stalliteview() 
+	{
+		satellite.click();
+	}
+	public void Mapview() 
+	{
+		Map.click();
+	}
+	public void Outputtext() 
+	{
+		
+		boolean rt =output.isDisplayed();
+		System.out.println(rt);
+		
+	}
+	
+	public void InputText() 
+	{
+		boolean dt=input.isDisplayed();
+		System.out.println(dt);
+	}
+	public void kmlcheckbox() 
+	{
+		boolean db =KML.isSelected();
+		System.out.println(db);
+	}
+	public void Csvcheckbox() 
+	{
+		boolean dy =CSV.isSelected();
+		System.out.println(dy);
+	}
 	public void lat_long_samp(WebDriver driver) 
 	{
 		
@@ -56,7 +108,7 @@ public class HomePage {
 		sample_UTM.click();
 		
 	}
-	
+	//13
 	public void click_on_browse_file_utm_fivelable() 
 	{
 		    String projectpath = System.getProperty("user.dir");
@@ -67,6 +119,12 @@ public class HomePage {
 	{
 		submit_and_download.click();
 	}
+	
+	public void valididate_submitButton() 
+	{
+		//
+	
+	}
 	public void click_on_manualy() 
 	{
 		paste_data_manually.click();
@@ -76,28 +134,31 @@ public class HomePage {
       {
     	  enter_data.sendKeys(Enterdata);
       }
+      //12
       public void click_on_browse_file_lat_long_fivelable() 
   	{
   		    String projectpath = System.getProperty("user.dir");
   		    
   			BrowseFile.sendKeys(projectpath+"\\Files\\UFO sightings.xlsx");
   	}
+      //11
       public void click_on_browse_file_lat_lon_1with400data() 
     	{
     		    String projectpath = System.getProperty("user.dir");
-    		    System.out.println(projectpath);
+    		   
     			BrowseFile.sendKeys(projectpath+"\\Files\\cal_cities_lat_long.xlsx");
     	}
+      //10
       public void click_on_browse_file_longmissing() 
   	{
   		    String projectpath = System.getProperty("user.dir");
-  		    System.out.println(projectpath);
+  		    
   			BrowseFile.sendKeys(projectpath+"\\Files\\Longitude missing.xlsx");
   	}
+      //9
       public void click_on_browse_file_latmissing() 
   	{
   		    String projectpath = System.getProperty("user.dir");
-  		    System.out.println(projectpath);
   			BrowseFile.sendKeys(projectpath+"\\Files\\Lattitude missing.xlsx");
   	}
       public String gettextfromWebelement() 
@@ -106,29 +167,84 @@ public class HomePage {
 		 return str;
     	  
       }
+      
+      public void clickonzoomin() 
+      {
+    	  Zoomin.click();
+      }
+      public void clickonZoomout() 
+      {
+    	  Zoomout.click();
+      }
+      
+      //**********************Error validation Files Code**********************************//
+      //8
       public void click_on_browse_file_latOutofBound() 
     	{
     		    String projectpath = System.getProperty("user.dir");
     		    
     			BrowseFile.sendKeys(projectpath+"\\Files\\LatitudeOutOfBound.xlsx");
     	}
+      //7
       public void click_on_browse_file_longOutofBound() 
     	{
     		    String projectpath = System.getProperty("user.dir");
     		    
     			BrowseFile.sendKeys(projectpath+"\\Files\\LongitudeOutOfBound.xlsx");
     	}
+      //14
       public void click_on_browse_file_UTMOutofBound() 
   	{
   		    String projectpath = System.getProperty("user.dir");
   		   
   			BrowseFile.sendKeys(projectpath+"\\Files\\UTM Easting OutOfBound.xlsx");
   	}
+      
+     //1 
+      public void browse_DD_latOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DD Lat out of bound.xlsx");
+      }
+      //2
+      public void browse_DD_longOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DD Long out of bound.xlsx");
+      }
+      
+      //3
+      public void browse_DDM_latOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DDM Lat out of bound.xlsx");
+      }
+      //4
+      public void browse_DDM_longOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DDM Long out of bound.xlsx");
+      }
+      //5
+      public void browse_DMS_latOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DMS Lat out of bound.xlsx");
+      }
+      //6
+      public void browse_DMS_longOOB() 
+      {
+    	  String projectpath = System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\Files\\DMS Long out of bound.xlsx");
+      }
+      
+      
       public void get_valid_DMS_file() 
       {
     	  
     	  String projectpath =System.getProperty("user.dir");
     	  BrowseFile.sendKeys(projectpath+"\\ValidFiles\\Valid DMS format.xlsx");
+    	  
     	  
       }
       public void get_Valid_DDM_file() 
@@ -151,6 +267,13 @@ public class HomePage {
     	  String projectpath =System.getProperty("user.dir");
     	  BrowseFile.sendKeys(projectpath+"\\ValidFiles\\Valid DMS(space) format with 2 lables and 5 row data.xlsx");
       }
+      
+      public void get_genralfile() 
+      {
+    	  String projectpath =System.getProperty("user.dir");
+    	  BrowseFile.sendKeys(projectpath+"\\ValidFiles\\TestLatlong.xlsx");
+      }
+      
       //<<<<<<............lat Long Headers methods are started.........>>>>>>
       
       public void get_lat_deg_long_degg()

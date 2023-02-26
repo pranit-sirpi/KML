@@ -25,7 +25,7 @@ public class ExtentManager {
 	
 	
 
-	    public static ExtentReports createInstance(String fileName) {
+	        public static ExtentReports createInstance(String fileName) {
 	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
 	       
 	        
@@ -50,7 +50,7 @@ public class ExtentManager {
 		public static void captureScreenshot() throws IOException {
 			
 			Date d = new Date();
-			 fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
+		    fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 
 			
 			

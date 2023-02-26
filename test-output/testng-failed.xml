@@ -1,31 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="extentlisteners.ExtentListeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
-    <parameter name="browsername" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="BaseTest.TestCases_withinvalidFile_ErrorMsg">
+      <class name="BaseTest.action_verfiy">
         <methods>
+          <include name="verfiy_forinvalid_long_file"/>
           <include name="Teardown"/>
           <include name="BrowserLaunch"/>
-          <include name="verfiy_forinvalid_long_file"/>
         </methods>
-      </class> <!-- BaseTest.TestCases_withinvalidFile_ErrorMsg -->
+      </class> <!-- BaseTest.action_verfiy -->
     </classes>
-  </test> <!-- Test(failed) -->
-  <test thread-count="5" name="Test2(failed)">
-    <parameter name="browsername" value="edge"/>
-    <classes>
-      <class name="BaseTest.TestCases_withinvalidFile_ErrorMsg">
-        <methods>
-          <include name="Teardown"/>
-          <include name="BrowserLaunch"/>
-          <include name="verfiy_forinvalid_long_file"/>
-        </methods>
-      </class> <!-- BaseTest.TestCases_withinvalidFile_ErrorMsg -->
-    </classes>
-  </test> <!-- Test2(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

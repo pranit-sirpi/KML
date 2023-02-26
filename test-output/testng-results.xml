@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-05T06:04:08Z" name="Suite" finished-at="2023-02-05T06:05:06Z" duration-ms="58425">
+  <suite started-at="2023-02-17T12:07:32Z" name="Suite" finished-at="2023-02-17T12:09:22Z" duration-ms="109801">
     <groups>
     </groups>
-    <test started-at="2023-02-05T06:04:08Z" name="Test" finished-at="2023-02-05T06:04:44Z" duration-ms="36288">
-      <class name="BaseTest.action_verfiy">
-        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:08Z" name="BrowserLaunch" finished-at="2023-02-05T06:04:13Z" duration-ms="5664" status="PASS">
+    <test started-at="2023-02-17T12:07:32Z" name="Test" finished-at="2023-02-17T12:09:22Z" duration-ms="109801">
+      <class name="BaseTest.genral_TestCases">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:32Z" name="BrowserLaunch" finished-at="2023-02-17T12:07:41Z" duration-ms="9406" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,129 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunch -->
-        <test-method signature="verify_UTM_sampledata()[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:13Z" name="verify_UTM_sampledata" finished-at="2023-02-05T06:04:19Z" duration-ms="5240" status="PASS">
+        <test-method signature="veify_uploadfile_Button()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:41Z" name="veify_uploadfile_Button" finished-at="2023-02-17T12:07:41Z" duration-ms="78" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- veify_uploadfile_Button -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:41Z" name="Teardown" finished-at="2023-02-17T12:07:42Z" duration-ms="153" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:42Z" name="BrowserLaunch" finished-at="2023-02-17T12:07:51Z" duration-ms="9691" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verfiyZoom_in_ZoomOut()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:51Z" name="verfiyZoom_in_ZoomOut" finished-at="2023-02-17T12:07:52Z" duration-ms="558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiyZoom_in_ZoomOut -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:52Z" name="Teardown" finished-at="2023-02-17T12:07:52Z" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:52Z" name="BrowserLaunch" finished-at="2023-02-17T12:07:56Z" duration-ms="4410" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verfiy_Mapview()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:07:56Z" name="verfiy_Mapview" finished-at="2023-02-17T12:08:01Z" duration-ms="4306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verfiy_Mapview -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:01Z" name="Teardown" finished-at="2023-02-17T12:08:01Z" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:01Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:05Z" duration-ms="4557" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verifyTitle()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:05Z" name="verifyTitle" finished-at="2023-02-17T12:08:05Z" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:05Z" name="Teardown" finished-at="2023-02-17T12:08:05Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:05Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:10Z" duration-ms="4696" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_Csv_Checkbox()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:10Z" name="verify_Csv_Checkbox" finished-at="2023-02-17T12:08:10Z" duration-ms="40" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Csv_Checkbox -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:10Z" name="Teardown" finished-at="2023-02-17T12:08:10Z" duration-ms="259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:10Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:16Z" duration-ms="5343" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_Kml_Checkbox()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:16Z" name="verify_Kml_Checkbox" finished-at="2023-02-17T12:08:16Z" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Kml_Checkbox -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:16Z" name="Teardown" finished-at="2023-02-17T12:08:16Z" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:16Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:21Z" duration-ms="4849" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_UTM_sampledata()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:21Z" name="verify_UTM_sampledata" finished-at="2023-02-17T12:08:26Z" duration-ms="5314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_UTM_sampledata -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:19Z" name="Teardown" finished-at="2023-02-05T06:04:19Z" duration-ms="120" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:26Z" name="Teardown" finished-at="2023-02-17T12:08:42Z" duration-ms="16231" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:19Z" name="BrowserLaunch" finished-at="2023-02-05T06:04:22Z" duration-ms="3803" status="PASS">
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:42Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:48Z" duration-ms="5807" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -37,57 +151,72 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BrowserLaunch -->
-        <test-method signature="verify_latlong_sampledata()[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:22Z" name="verify_latlong_sampledata" finished-at="2023-02-05T06:04:28Z" duration-ms="5211" status="PASS">
+        <test-method signature="verify_latlong_sampledata()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:48Z" name="verify_latlong_sampledata" finished-at="2023-02-17T12:08:53Z" duration-ms="5269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_latlong_sampledata -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.action_verfiy@62435e70]" started-at="2023-02-05T06:04:28Z" name="Teardown" finished-at="2023-02-05T06:04:44Z" duration-ms="16225" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:53Z" name="Teardown" finished-at="2023-02-17T12:08:54Z" duration-ms="128" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-      </class> <!-- BaseTest.action_verfiy -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:54Z" name="BrowserLaunch" finished-at="2023-02-17T12:08:59Z" duration-ms="5203" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_paste_manual()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:59Z" name="verify_paste_manual" finished-at="2023-02-17T12:08:59Z" duration-ms="149" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_paste_manual -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:59Z" name="Teardown" finished-at="2023-02-17T12:08:59Z" duration-ms="122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:08:59Z" name="BrowserLaunch" finished-at="2023-02-17T12:09:04Z" duration-ms="4971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_satalliteview()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:09:04Z" name="verify_satalliteview" finished-at="2023-02-17T12:09:05Z" duration-ms="1086" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_satalliteview -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:09:05Z" name="Teardown" finished-at="2023-02-17T12:09:05Z" duration-ms="108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:09:05Z" name="BrowserLaunch" finished-at="2023-02-17T12:09:10Z" duration-ms="4736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserLaunch -->
+        <test-method signature="verify_upload_file()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:09:10Z" name="verify_upload_file" finished-at="2023-02-17T12:09:22Z" duration-ms="11572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_upload_file -->
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.genral_TestCases@665e9289]" started-at="2023-02-17T12:09:22Z" name="Teardown" finished-at="2023-02-17T12:09:22Z" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Teardown -->
+      </class> <!-- BaseTest.genral_TestCases -->
     </test> <!-- Test -->
-    <test started-at="2023-02-05T06:04:44Z" name="Test2" finished-at="2023-02-05T06:05:06Z" duration-ms="21850">
-      <class name="BaseTest.action_verfiy">
-        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:04:44Z" name="BrowserLaunch" finished-at="2023-02-05T06:04:50Z" duration-ms="5769" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserLaunch -->
-        <test-method signature="verify_UTM_sampledata()[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:04:50Z" name="verify_UTM_sampledata" finished-at="2023-02-05T06:04:55Z" duration-ms="5201" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_UTM_sampledata -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:04:55Z" name="Teardown" finished-at="2023-02-05T06:04:55Z" duration-ms="146" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="BrowserLaunch(java.lang.String)[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:04:55Z" name="BrowserLaunch" finished-at="2023-02-05T06:05:01Z" duration-ms="5401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- BrowserLaunch -->
-        <test-method signature="verify_latlong_sampledata()[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:05:01Z" name="verify_latlong_sampledata" finished-at="2023-02-05T06:05:06Z" duration-ms="5189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify_latlong_sampledata -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:BaseTest.action_verfiy@2692b61e]" started-at="2023-02-05T06:05:06Z" name="Teardown" finished-at="2023-02-05T06:05:06Z" duration-ms="140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- BaseTest.action_verfiy -->
-    </test> <!-- Test2 -->
   </suite> <!-- Suite -->
 </testng-results>
